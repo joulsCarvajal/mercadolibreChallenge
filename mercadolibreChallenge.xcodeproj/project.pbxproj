@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B90887282C38AD960088B981 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90887272C38AD960088B981 /* ProductDetail.swift */; };
+		B92A0E8C2C36F4BB0037E303 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = B92A0E8B2C36F4BB0037E303 /* SDWebImageSwiftUI */; };
 		B94A22322C35A8F2005C4D9C /* mercadolibreChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94A22312C35A8F2005C4D9C /* mercadolibreChallengeApp.swift */; };
-		B94A22342C35A8F2005C4D9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94A22332C35A8F2005C4D9C /* ContentView.swift */; };
 		B94A22362C35A8F3005C4D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94A22352C35A8F3005C4D9C /* Assets.xcassets */; };
 		B94A22392C35A8F3005C4D9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94A22382C35A8F3005C4D9C /* Preview Assets.xcassets */; };
+		B94A22432C35ABD9005C4D9C /* MeliSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94A22422C35ABD9005C4D9C /* MeliSearcher.swift */; };
+		B94A22452C35B8A6005C4D9C /* ApiNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94A22442C35B8A6005C4D9C /* ApiNetWork.swift */; };
+		B9EA5CA52C39B85E00EACAFA /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA5CA42C39B85E00EACAFA /* AppError.swift */; };
+		B9EA5CA72C39C1A500EACAFA /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EA5CA62C39C1A500EACAFA /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B90887272C38AD960088B981 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		B92A0E8D2C36FE730037E303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B94A222E2C35A8F2005C4D9C /* mercadolibreChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mercadolibreChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94A22312C35A8F2005C4D9C /* mercadolibreChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mercadolibreChallengeApp.swift; sourceTree = "<group>"; };
-		B94A22332C35A8F2005C4D9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B94A22352C35A8F3005C4D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B94A22382C35A8F3005C4D9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B94A22422C35ABD9005C4D9C /* MeliSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliSearcher.swift; sourceTree = "<group>"; };
+		B94A22442C35B8A6005C4D9C /* ApiNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetWork.swift; sourceTree = "<group>"; };
+		B9EA5CA42C39B85E00EACAFA /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		B9EA5CA62C39C1A500EACAFA /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92A0E8C2C36F4BB0037E303 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +62,10 @@
 		B94A22302C35A8F2005C4D9C /* mercadolibreChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				B92A0E8D2C36FE730037E303 /* Info.plist */,
+				B94A22412C35AB9D005C4D9C /* MercadoLibre */,
 				B94A22312C35A8F2005C4D9C /* mercadolibreChallengeApp.swift */,
-				B94A22332C35A8F2005C4D9C /* ContentView.swift */,
+				B9EA5CA62C39C1A500EACAFA /* SplashScreen.swift */,
 				B94A22352C35A8F3005C4D9C /* Assets.xcassets */,
 				B94A22372C35A8F3005C4D9C /* Preview Content */,
 			);
@@ -65,6 +78,17 @@
 				B94A22382C35A8F3005C4D9C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B94A22412C35AB9D005C4D9C /* MercadoLibre */ = {
+			isa = PBXGroup;
+			children = (
+				B94A22422C35ABD9005C4D9C /* MeliSearcher.swift */,
+				B94A22442C35B8A6005C4D9C /* ApiNetWork.swift */,
+				B90887272C38AD960088B981 /* ProductDetail.swift */,
+				B9EA5CA42C39B85E00EACAFA /* AppError.swift */,
+			);
+			path = MercadoLibre;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,9 @@
 			dependencies = (
 			);
 			name = mercadolibreChallenge;
+			packageProductDependencies = (
+				B92A0E8B2C36F4BB0037E303 /* SDWebImageSwiftUI */,
+			);
 			productName = mercadolibreChallenge;
 			productReference = B94A222E2C35A8F2005C4D9C /* mercadolibreChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +138,9 @@
 				Base,
 			);
 			mainGroup = B94A22252C35A8F2005C4D9C;
+			packageReferences = (
+				B92A0E8A2C36F4BB0037E303 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B94A222F2C35A8F2005C4D9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B94A22342C35A8F2005C4D9C /* ContentView.swift in Sources */,
+				B9EA5CA72C39C1A500EACAFA /* SplashScreen.swift in Sources */,
+				B94A22452C35B8A6005C4D9C /* ApiNetWork.swift in Sources */,
+				B94A22432C35ABD9005C4D9C /* MeliSearcher.swift in Sources */,
 				B94A22322C35A8F2005C4D9C /* mercadolibreChallengeApp.swift in Sources */,
+				B90887282C38AD960088B981 /* ProductDetail.swift in Sources */,
+				B9EA5CA52C39B85E00EACAFA /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +309,7 @@
 				DEVELOPMENT_TEAM = 385LUL4MHH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mercadolibreChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +339,7 @@
 				DEVELOPMENT_TEAM = 385LUL4MHH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = mercadolibreChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B92A0E8A2C36F4BB0037E303 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B92A0E8B2C36F4BB0037E303 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B92A0E8A2C36F4BB0037E303 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B94A22262C35A8F2005C4D9C /* Project object */;
 }
