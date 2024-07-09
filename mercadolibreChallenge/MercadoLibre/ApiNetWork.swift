@@ -33,15 +33,6 @@ class ApiNetWork{
     }
     
     func getProductByQuery(query:String) async throws -> Wrapper{
-        //Toca controlar el signo de admiración !, porque le estamos diciendo que si o si esa url existe y si no?
-        //        let url = URL(string: "https://api.mercadolibre.com/sites/MLA/search?category=\(query)")!
-        //        let url = URL(string: "https://api.mercadolibre.com/sites/MLA/search?q=\(query)%20")!
-        
-        //        let (data, _) = try await URLSession.shared.data(from: url)
-        //
-        //        let wrapper = try JSONDecoder().decode(Wrapper.self, from: data)
-        //
-        //        return wrapper
         
         guard let url = URL(string: "https://api.mercadolibre.com/sites/MLA/search?q=\(query)%20") else {
             throw NetworkError.urlError
